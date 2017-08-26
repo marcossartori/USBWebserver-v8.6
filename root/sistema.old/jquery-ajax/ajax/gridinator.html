@@ -1,0 +1,942 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Compare Ninja | Edit your table</title>
+
+	<!-- Meta Tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Compare Ninja - Create Beautiful HTML & CSS Comparison Tables">
+	<meta name="keywords" content="Compare Ninja, HTML Tables, Beautiful HTML CSS Tables, HTML, CSS, CSS3, Web 2.0, Sharing Comparison Tables, Creating HTML Tables, Free Web Application, Tables Generator, HTML & CSS Tables Generator, Web Generator, Daniel Sternlicht">
+	<meta property="og:image" content="http://compareninja.com/public_icon.png" />
+	
+	<!-- Favicon -->
+	<link rel="SHORTCUT ICON" href="http://compareninja.com/favicon.ico">
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="http://compareninja.com/public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="http://compareninja.com/public/css/style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Scripts -->
+	<script type="text/javascript" src="http://compareninja.com/public/js/jquery.js"></script>
+	<script type="text/javascript" src="http://compareninja.com/public/js/main.js"></script>
+		
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-26409066-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
+</head>
+<body>
+
+<div id="cnWrapper">
+
+<!-- For logged in users -->
+<div id="userPanel" class="clearfix">
+	<p>
+		Hello <span>marcos</span>
+		<a href="http://compareninja.com/user/logout">Log out</a>
+	</p>
+	<div>
+		
+		<!-- For Admin Only -->
+		
+		<a href="http://compareninja.com/user/dashboard">Dashboard</a>
+
+		<a href="http://compareninja.com/tables/wizard">+ Create a new table</a>
+
+	</div>
+</div>
+	
+<header>
+
+	<div class="wrapper clearfix">
+		
+		<aside id="logo">
+			<div>
+				<a class="first" href="http://compareninja.com/" title="Homepage"><img src="http://compareninja.com/public/images/logo.png" /></a>
+				<a href="http://pricerninja.com" target="_blank" title="HTML & CSS Pricing tables"><img src="http://compareninja.com/public/images/pricerninja_dark.png" /></a>
+				<a href="http://feederninja.com" target="_blank" title="RSS & Social media feed widgets"><img src="http://compareninja.com/public/images/feederninja_dark.png" /></a>
+				<a href="http://chartsninja.com" target="_blank" title="HTML5 Graphs & Charts"><img src="http://compareninja.com/public/images/chartsninja_dark.png" /></a>
+			</div>
+					</aside>
+
+		<nav>
+			
+<ul>
+	<li>
+		<a href="http://compareninja.com/?orig=true">Home</a>		
+	</li>
+	<li>
+		<a href="http://compareninja.com/features">Features</a>		
+	</li>
+	<li>
+		<a href="http://compareninja.com/tables">Examples</a>
+	</li>
+	<li>
+		<a href="http://compareninja.com/tables/wizard">Generator</a>		
+	</li>
+	<li>
+		<a href="http://compareninja.com/howto">How To</a>		
+	</li>
+
+	<!-- For logged in users -->
+	
+	<li>
+		<a href="http://compareninja.com/premium">Premium</a>		
+	</li>
+
+		
+</ul>		</nav>
+
+	</div>
+
+</header>
+	
+<section>
+	
+	
+
+<div id="notifications"></div>
+
+<div id="wizard" class="clearfix">
+
+	<div id="wizardMenu">
+		<div class="wrapper">
+			<!--<h2>Create a new comparison table</h2>-->
+			<ul class="clearfix">
+				<li class="settings"><a href="#settings"><span></span>Table Settings</a></li>
+				<li class="style"><a href="#skins"><span></span>Table Style</a></li>
+				<li class="editTable"><a href="#edit"><span></span>Table Edit</a></li>
+				<li class="getCode"><a href="#code"><span></span>Table Publish</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<section id="wizardContent">
+
+		<div id="settings" class="step wrapper">
+			<h3>Table Settings</h3>
+			<div class="formRow clearfix">
+				<label>Table Name</label>
+				<input type="text" name="name" placeholder="f.e iPhone vs. Android" value="marcos" autofocus />
+			</div>
+			<div class="formRow clearfix">
+				<label>Table width</label>
+				<input type="text" name="tableWidth" value="100" />
+				<select name="widthType">
+					<option value="percent">%</option>
+					<option value="px">px</option>
+				</select>
+			</div>
+			<div class="formRow clearfix">
+				<label>Show Title</label>
+				<div class="lineComplete normal">
+					<input type="checkbox" name="showTitle" checked />
+				</div>
+			</div>
+			<div class="formRow clearfix">
+				<label>Private table <span>(<a href="#" class="goPremiumBtn">Premium only</a>)</span></label>
+				<div class="lineComplete ">
+					<input type="checkbox" id="isPrivate" name=""  disabled />
+				</div>
+			</div>
+			<div class="formRow clearfix">
+				<label>Remove Ads <span>(<a href="#" class="goPremiumBtn">Premium only</a>)</span></label>
+				<div class="lineComplete ">
+					<input type="checkbox" id="hideCredits" name=""  disabled />
+				</div>
+			</div>
+			<div><a href="#" class="saveChanges button"><span>Save Changes</span></a></div>
+		</div>
+
+		<div id="skins" class="wrapper step">
+
+			<h3>Choose Table Skin</h3>
+
+			<div id="searchSkins">
+				<input type="text" name="searchSkins" placeholder="Enter keyword" />
+				<button class="silverButton small">Find</button>
+			</div>
+
+			<div id="skinsWrapper">
+				<ul class="clearfix">
+					
+						<li data-name="Classic">
+							<img src="http://compareninja.com/template/skins/Classic/thumb.png" />
+							<div class="overlay">
+								<p>Classic</p>
+							</div>
+							
+							
+															<input type="hidden" value="54240623717d4cc184e045bd224d5e" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li class="selected" data-name="Light Blue">
+							<img src="http://compareninja.com/template/skins/Light Blue/thumb.png" />
+							<div class="overlay">
+								<p>Light Blue</p>
+							</div>
+							
+							
+															<input type="hidden" value="aa0e0e888ab14477a270bcddf2789f" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li data-name="Green Apple">
+							<img src="http://compareninja.com/template/skins/Green Apple/thumb.png" />
+							<div class="overlay">
+								<p>Green Apple</p>
+							</div>
+							
+							
+															<input type="hidden" value="f9a75625707c4753afd94a21df1c96" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li data-name="Sky">
+							<img src="http://compareninja.com/template/skins/Sky/thumb.png" />
+							<div class="overlay">
+								<p>Sky</p>
+							</div>
+							
+							
+															<input type="hidden" value="9485428db0f5469e916179ba820894" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li data-name="Deep Purple">
+							<img src="http://compareninja.com/template/skins/Deep Purple/thumb.png" />
+							<div class="overlay">
+								<p>Deep Purple</p>
+							</div>
+							
+							
+															<input type="hidden" value="d6f4c21ea5a5474a91a53041c56cf5" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li data-name="Annoying Orange">
+							<img src="http://compareninja.com/template/skins/Annoying Orange/thumb.png" />
+							<div class="overlay">
+								<p>Annoying Orange</p>
+							</div>
+							
+							
+															<input type="hidden" value="eba244c3e53b4f7abf8750e26d2238" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li data-name="Rainy Blue">
+							<img src="http://compareninja.com/template/skins/Rainy Blue/thumb.png" />
+							<div class="overlay">
+								<p>Rainy Blue</p>
+							</div>
+							
+							
+															<input type="hidden" value="6ee733bf9c79486aa36c1b0e961bf6" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li data-name="Facebook Like">
+							<img src="http://compareninja.com/template/skins/Facebook Like/thumb.png" />
+							<div class="overlay">
+								<p>Facebook Like</p>
+							</div>
+							
+							
+															<input type="hidden" value="060c1feb6c024dd1843f404f720252" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li data-name="Black Mamba">
+							<img src="http://compareninja.com/template/skins/Black Mamba/thumb.png" />
+							<div class="overlay">
+								<p>Black Mamba</p>
+							</div>
+							
+							
+															<input type="hidden" value="507c49b3700a4448ba51f4819b90d6" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li data-name="Smelly Lemon">
+							<img src="http://compareninja.com/template/skins/Smelly Lemon/thumb.png" />
+							<div class="overlay">
+								<p>Smelly Lemon</p>
+							</div>
+							
+							
+															<input type="hidden" value="d58f4f3e7aa14305bfa619b6af6a37" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li data-name="Grey Anatomy">
+							<img src="http://compareninja.com/template/skins/Grey Anatomy/thumb.png" />
+							<div class="overlay">
+								<p>Grey Anatomy</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+					
+						<li data-name="Simply Me">
+							<img src="http://compareninja.com/template/skins/Simply Me/thumb.png" />
+							<div class="overlay">
+								<p>Simply Me</p>
+							</div>
+							
+							
+															<input type="hidden" value="2b374282b3584984a86de6725c4540" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li data-name="Woody Allen">
+							<img src="http://compareninja.com/template/skins/Woody Allen/thumb.png" />
+							<div class="overlay">
+								<p>Woody Allen</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+					
+						<li data-name="Clean White">
+							<img src="http://compareninja.com/template/skins/Clean White/thumb.png" />
+							<div class="overlay">
+								<p>Clean White</p>
+							</div>
+							
+							
+															<input type="hidden" value="037637e4c6ff4457bc1b6e2749691d" />
+								<a href="#edit" class="silverButton smallEditBtn">Edit</a>
+							
+						</li>
+
+					
+						<li data-name="Blue Lagoon">
+							<img src="http://compareninja.com/template/skins/Blue Lagoon/thumb.png" />
+							<div class="overlay">
+								<p>Blue Lagoon</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+					
+						<li data-name="Blue Blues">
+							<img src="http://compareninja.com/template/skins/Blue Blues/thumb.png" />
+							<div class="overlay">
+								<p>Blue Blues</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+					
+						<li data-name="Black Pearl">
+							<img src="http://compareninja.com/template/skins/Black Pearl/thumb.png" />
+							<div class="overlay">
+								<p>Black Pearl</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+					
+						<li data-name="Square It">
+							<img src="http://compareninja.com/template/skins/Square It/thumb.png" />
+							<div class="overlay">
+								<p>Square It</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+					
+						<li data-name="Doctor Green">
+							<img src="http://compareninja.com/template/skins/Doctor Green/thumb.png" />
+							<div class="overlay">
+								<p>Doctor Green</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+					
+						<li data-name="Orange Juice">
+							<img src="http://compareninja.com/template/skins/Orange Juice/thumb.png" />
+							<div class="overlay">
+								<p>Orange Juice</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+					
+						<li data-name="Cold Bath">
+							<img src="http://compareninja.com/template/skins/Cold Bath/thumb.png" />
+							<div class="overlay">
+								<p>Cold Bath</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+					
+						<li data-name="Mine Craft">
+							<img src="http://compareninja.com/template/skins/Mine Craft/thumb.png" />
+							<div class="overlay">
+								<p>Mine Craft</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+					
+						<li data-name="Pink Panther">
+							<img src="http://compareninja.com/template/skins/Pink Panther/thumb.png" />
+							<div class="overlay">
+								<p>Pink Panther</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+					
+						<li data-name="Silver Surfer">
+							<img src="http://compareninja.com/template/skins/Silver Surfer/thumb.png" />
+							<div class="overlay">
+								<p>Silver Surfer</p>
+							</div>
+							
+															<div class="premiumCrown"><span></span></div>
+							
+							
+						</li>
+
+									</ul>
+			</div>
+			<div><a href="#" class="saveChanges button"><span>Save Changes</span></a></div>
+
+		</div>
+
+		<div id="edit" class="step">
+			<div id="tools">
+				<h4>Tools</h4>
+				<div class="clearfix">
+					<a class="addRow first" href="#"><span>Add Row</span></a>
+					<a class="removeRow" href="#"><span>Remove Row</span></a>
+					<a class="addCol" href="#"><span>Add Column</span></a>
+					<a class="removeCol" href="#"><span>Remove Column</span></a>
+					<a class="importCSV last" href="#"><span>Import CSV file</span></a>
+					<a class="addTooltip" href="#"><span>Add Tooltip</span></a>
+					<a class="cancelEditMode disabled" href="#"><span>Exit Edit Mode</span></a>
+				</div>
+			</div>
+			<h3>Edit Your Table</h3>
+			<div id="editZone">
+								<h2 id="vsTableTitle" style="
+					font-size: 34px;					text-align: left;					color: #454545;				">
+				</h2>
+								<div id="tableMainWrapper"><div id="tableWrapper" style="width: 100%;"><table id="vsTable" class="editMode forCol"><tbody class="" style=""><tr class="" style=""><td class="cat title" style="width: 25%;"></td><td class="title" style="width: 316px; display: table-cell;"><div>Title</div></td><td class="title" style="width: 315px;"><div>Title</div></td><td class="title" style="width: 315px;"><div>Title</div></td></tr><tr class="second" style=""><td class="cat" style="width: 25%;"><div>Category</div></td><td class="" style="width: 25%;"><div class="yes"></div></td><td class="" style="width: 25%;"><div class="yes"></div></td><td style="width: 25%;" class=""><div class="yes"></div></td></tr><tr style=""><td class="cat" style="width: 25%;"><div>Category</div></td><td class="" style="width: 25%;"><div class="yes"></div></td><td class="" style="width: 25%;"><div class="yes"></div></td><td style="width: 25%;" class=""><div class="yes"></div></td></tr><tr class="second" style=""><td class="cat" style="width: 25%;"><div>Category</div></td><td class="" style="width: 25%;"><div class="yes"></div></td><td class="" style="width: 25%;"><div class="yes"></div></td><td style="width: 25%;" class=""><div class="yes"></div></td></tr></tbody></table></div><p>This table was created with <a href="http://www.compareninja.com" target="_blank">Compare Ninja</a>.</p></div>
+			</div>
+			<div><a href="#" class="saveChanges button"><span>Save Changes</span></a></div>
+		</div>
+
+		<div id="code" class="step wrapper clearfix">
+		
+		
+			<div class="left">
+				<h3>Publish Your Table!</h3>
+				
+				<div id="publishTypesMenu">
+					<a class="active" href="#basicPublish">Basic</a>
+					<a href="#advancedPublish">Advanced</a>
+				</div>
+
+				<div id="basicPublish" class="publishType active">
+				
+					<p><strong>1</strong> Place this single line of code inside your HTML file</p>
+<textarea id="HTMLCode" class="dropcode">
+<div id="compareNinjaTable_42306">
+	<img src="http://compareninja.com/public/images/loader_small.gif" style="display: block; width: 18px; margin: 50px auto 0;" />
+	<p style="display: none;">Created with Compare Ninja</p>
+</div>
+</textarea>
+
+					<p><strong>2</strong> Add the following script right after the code line above</p>
+
+<textarea id="JSCode" class="dropcode"><script type="text/javascript">
+(function() {
+	var cn = document.createElement('script'); cn.type = 'text/javascript';
+	cn.src = 'http://compareninja.com/API/table/42306?cnurl=' + window.location.href;
+	var s = document.getElementsByTagName('head')[0].appendChild(cn);
+})();
+</script></textarea>
+				
+					<div class="notificationBox">
+						<p><b>Note</b>: You only need to add this code once. After that, your table will automatically update itself.</p> 
+					</div>
+
+				</div>
+
+				<div id="advancedPublish" class="publishType">
+
+										
+					<p>Get a full HTML code access, control the output and enjoy SEO friendly code for your website</p>
+
+					<div class="notificationBox">
+						<p>This feature available only for premium members. <a href="#" class="goPremiumBtn">Upgrade your account</a> now for only <b>$3 per month</b>! It's so worth it... :)</p> 
+					</div>
+					
+									
+				</div>
+
+				<input type="hidden" name="tableID" value="42306" />
+
+			</div>
+			<div class="right">
+				<div id="compatibleWith" class="widget">
+					<h3>Compatible With</h3>
+					<div class="widgetContent">
+						<img src="http://compareninja.com/public/images/browsers/all_browsers.png" />
+						<p class="clearfix">
+							<span>IE8+</span> 
+							<span>Firefox</span>
+							<span>Safari</span>
+							<span>Chrome</span>
+							<span>Opera</span>
+						</p>
+					</div>
+				</div>
+				<div class="widget">
+					<h3>What does this code do?</h3>
+					<div class="widgetContent">
+						<p>Those few lines of code you're about to copy into your website have a few parts that you should know about:</p>
+						<ol>
+							<li>Determine where is your comparison table will take place in your page.</li>
+							<li>Go to Compare Ninja's API, brings the relevant table style and content and implement it in your page.</li>
+							<li>Communicate with Compare Ninja, so Compare Ninja could give you statistics about your table.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+		
+		</div>
+
+	</section>
+
+</div>
+
+<div id="importCSVBox" class="lightbox special">
+	<h3>Import CSV File</h3>
+	<div id="dropbox">
+		<p>Drag & Drop your CSV file here</p>
+		<p class="note">(note: please replace all comma characters (",") <br />with "&amp;sbquo;")</p>
+		<p class="csvUploadNote">Or upload with: <input type="file" id="csvUpload" name="csvUpload" /></p>
+	</div>
+</div>
+
+<div id="addTooltipPopup" class="lightbox special">
+	<div class="form">
+		<h3>Add Tooltip</h3>
+		<div class="formRow clearfix">
+			<label>Content</label>
+			<textarea name="text" autofocus></textarea>
+		</div>
+		<div class="formRow clearfix">
+			<label>Position</label>
+			<select name="tooltipPosition">
+				<option name="right">Right</option>
+				<option name="left">Left</option>
+				<option name="top">Top</option>
+				<option name="bottom">Bottom</option>
+			</select>
+		</div>
+		<div class="center">
+			<a href="#" class="removeTooltipBtn">Remove Tooltip</a>
+			<a href="#" class="addTooltipBtn button"><span>Add Tooltip</span></a>
+		</div>
+	</div>
+</div>
+
+<div id="uploadImagePopup" class="lightbox special">
+	<div class="form">
+		<h3>Add Image</h3>
+		<div class="formRow clearfix">
+			<label>Image URL</label>
+			<input type="text" placeholder="Add an image URL" name="imageUrl" autofocus />
+			<div class="silverButton fileinput-button">
+		        <span>Upload</span>
+		        <input id="uploadImageBtn" type="file" name="files[]" multiple>
+		    </div>
+		</div>
+		<div class="formRow clearfix">
+			<label>Link To</label>
+			<input type="text" class="notMandatory" placeholder="http://site.com/" name="linkTo" />
+		</div>
+		<div class="formRow clearfix">
+			<label>Open in</label>
+			<select name="target">
+				<option value="_blank">New tab</option>
+				<option value="_self">Same window</option>
+			</select>
+		</div>
+		<div class="formRow clearfix">
+			<label>Image Width</label>
+			<input type="text" class="small notMandatory" placeholder="0" name="imageWidth" /> <span>px</span>
+		</div>
+		<div class="formRow clearfix">
+			<label>Image Height</label>
+			<input type="text" class="small notMandatory" placeholder="0" name="imageHeight" /> <span>px</span>
+		</div>
+		<div class="formRow clearfix">
+			<label>Image Padding</label>
+			<input type="text" class="small notMandatory" placeholder="0" name="imagePadding" /> <span>px</span>
+		</div>
+		<div class="center">
+			<a href="#" class="removeImageBtn">Remove Image</a>
+			<a href="#" class="addImageBtn button"><span>Add Image</span></a>
+		</div>
+	</div>
+</div>
+<!-- Added -->
+<div id="editMainTitle" class="lightbox special">
+	<div class="form">
+		<h3>Edit Title</h3>
+		<div class="formRow clearfix">
+			<label>Text</label>
+			<input type="text" name="text" autofocus />
+		</div>
+		<div class="formRow clearfix">
+			<label>Color</label>
+			<div id="colorSelector"><div></div></div>
+			<input type="hidden" name="titleColor" />
+		</div>
+		<div class="formRow clearfix">
+			<label>Font Size</label>
+			<input type="text" class="small notMandatory" name="titleSize" /> <span>px</span>
+		</div>
+		<div class="formRow clearfix">
+			<label>Align</label>
+			<select name="titleAlign">
+				<option value="left">Left</option>
+				<option value="center">Center</option>
+				<option value="right">Right</option>
+			</select>
+		</div>
+		<div class="extraSettings clearfix">
+			<input type="checkbox" name="titleInsideTable" /><label>Place the title inside the table</label>
+		</div>
+		<div class="center">
+			<a href="#" class="button setMainTitle"><span>Set Title</span></a>
+		</div>
+	</div>
+</div>
+
+<div id="addContentBox" class="lightbox special">
+	<h3>Add Content</h3>
+	<div class="form">
+		<div id="chooseCellContent" class="clearfix">
+			<p>Choose content type: </p>
+			<ul class="closed">
+				<li data-type="text"><a href="#add_text">Text</a></li>
+				<li class="selected" style="display: none;" data-type="text"><a href="#add_text">Text</a></li>
+				<li data-type="link"><a href="#add_link">Link</a></li>
+				<li data-type="tableButton"><a href="#add_tableButton">Button</a></li>
+				<li data-type="image"><a href="#add_image">Image</a></li>
+				<li data-type="rating"><a href="#add_rating">Rating</a></li>
+				<li data-type="paypal"><a href="#add_paypal">Paypal Button</a></li>
+			</ul>
+			<div class="arrow close"></div>
+		</div>
+		<div id="cellContentType">
+			<div id="add_text" class="content_type">
+				<div class="formRow clearfix">
+					<label>Text</label>
+					<input type="text" name="text" autofocus />
+				</div>
+				<div class="formRow clearfix">
+					<label>Size</label>
+					<div class="lineComplete clearfix">
+						<input type="radio" value="big" name="text_size" /><span>Big</span>
+						<input type="radio" value="medium" name="text_size" /><span>Medium</span>
+						<input type="radio" value="normal" name="text_size" checked /><span>Normal</span>
+					</div>
+				</div>
+			</div>
+			<div id="add_link" class="content_type">
+				<div class="formRow clearfix">
+					<label>Text</label>
+					<input type="text" name="text" autofocus />
+				</div>
+				<div class="formRow clearfix">
+					<label>URL</label>
+					<input type="text" placeholder="http://website.com" name="url" />
+				</div>
+				<div class="formRow clearfix">
+					<label>Open in</label>
+					<select name="target">
+						<option value="_blank">New tab</option>
+						<option value="_self">Same window</option>
+					</select>
+				</div>
+			</div>
+			<div id="add_tableButton" class="content_type">
+				<div class="formRow clearfix">
+					<label>Text</label>
+					<input type="text" name="text" autofocus />
+				</div>
+				<div class="formRow clearfix">
+					<label>URL</label>
+					<input type="text" placeholder="http://website.com" name="url" />
+				</div>
+				<div class="formRow clearfix">
+					<label>Open in</label>
+					<select name="target">
+						<option value="_blank">New tab</option>
+						<option value="_self">Same window</option>
+					</select>
+				</div>
+				<div class="formRow clearfix">
+					<label>Size</label>
+					<div class="lineComplete clearfix">
+						<input type="radio" value="big" name="size" /><span>Big</span>
+						<input type="radio" value="normal" name="size" checked /><span>Normal</span>
+						<input type="radio" value="small" name="size" /><span>Small</span>
+					</div>
+				</div>
+			</div>
+			<div id="add_image" class="content_type">
+				<div class="formRow clearfix">
+					<label>Image URL</label>
+					<input type="text" placeholder="http://site.com/image.png" name="imageUrl" autofocus />
+					<div class="silverButton fileinput-button">
+				        <span>Upload</span>
+				        <input id="uploadImageBtn" type="file" name="files[]" multiple>
+				    </div>
+				</div>
+				<div class="formRow clearfix">
+					<label>Caption</label>
+					<input type="text" class="notMandatory" placeholder="Caption text" name="text" />
+				</div>
+				<div class="formRow clearfix">
+					<label>Link To</label>
+					<input type="text" class="notMandatory" placeholder="http://site.com/" name="linkTo" />
+				</div>
+				<div class="formRow clearfix">
+					<label>Open in</label>
+					<select name="target">
+						<option value="_blank">New tab</option>
+						<option value="_self">Same window</option>
+					</select>
+				</div>
+			</div>
+			<div id="add_rating" class="content_type">
+								<div class="notificationBox">
+					<p>Sorry Ninja, this feature available only for premium members. <br /><a href="#" class="goPremiumBtn">Upgrade your account</a> now!</p> 
+				</div>
+							</div>
+			<div id="add_paypal" class="content_type">
+								<div class="notificationBox">
+					<p>Sorry Ninja, this feature available only for premium members. <br /><a href="#" class="goPremiumBtn">Upgrade your account</a> now!</p> 
+				</div>
+							</div>
+			<div class="center">
+				<a href="#" class="setCellContent button"><span>Set Content</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="generatingTable" class="lightbox">
+	<section>
+		<div class="loader big"></div>
+		<p>Saving Changes...</p>
+	</section>
+</div>
+
+<div id="EditExistTable"></div>
+
+<link id="currentSkin" rel="stylesheet" type="text/css" href="http://compareninja.com/template/skins/Light Blue/skin.css" />
+<link rel="stylesheet" type="text/css" href="http://compareninja.com/template/skins/common.css" />
+<!-- Added -->
+<link rel="stylesheet" type="text/css" href="http://compareninja.com/public/css/colorpicker.css" />
+<link rel="stylesheet" type="text/css" href="http://compareninja.com/public/css/jquery.fileupload-ui.css" />
+<script type="text/javascript" src="http://compareninja.com/public/js/jquery.ui.custom.min.js"></script>
+<script type="text/javascript" src="http://compareninja.com/public/js/sortable.js"></script>
+<!-- Added -->
+<script type="text/javascript" src="http://compareninja.com/public/js/colorpicker.js"></script>
+<script type="text/javascript" src="http://compareninja.com/public/js/colResizable.js"></script>
+<script type="text/javascript" src="http://compareninja.com/public/js/hashes.js"></script>
+<script type="text/javascript" src="http://compareninja.com/public/js/jquery.fileupload.js"></script>
+<script type="text/javascript" src="http://compareninja.com/public/js/jquery.iframe-transport.js"></script>
+<script type="text/javascript" src="http://compareninja.com/public/js/csvUploader.js"></script>
+<script type="text/javascript" src="http://compareninja.com/public/js/wizard.js"></script>
+<script type="text/javascript">
+	var planInfo = {"plan_name": "Basic","max_rows": 10,"max_columns": 5};
+</script>
+
+</section>
+
+<div class="spacer"></div>
+
+</div>
+
+<footer>
+	<div class="wrapper clearfix">
+		<ul>
+			<li>
+				<a href="http://compareninja.com/">Home</a>		
+			</li>
+			<li>
+				<a href="http://compareninja.com/about">About Us</a>		
+			</li>
+			<li>
+				<a href="http://compareninja.com/terms">Terms & Conditions</a>
+			</li>
+			<li>
+				<a href="http://compareninja.com/privacy">Privacy Policy</a>
+			</li>
+			<li>
+				<a href="#" class="openContactusBox">Contact Us</a>
+			</li>
+			<li>
+				<a class="cn_social facebook" href="http://www.facebook.com/CommonNinja" target="_blank"></a>
+				<a class="cn_social twitter" href="http://twitter.com/commonninja" target="_blank"></a>
+			</li>
+		</ul>
+		<p id="copyrights">
+			Copyright 2013, <strong><a href="http://compareninja.com/">CompareNinja</a></strong>. All rights reserved 
+			<span class="clearfix"><img src="http://compareninja.com/public/images/commonninja_icon.png" /><span>Powered by <strong><a href="http://commoninja.com" target="_blank">Common Ninja</a></strong>.</span></span>
+		</p>
+	</div>
+</footer>
+
+
+<div id="goPremium" class="lightbox special">
+	<h3>Go Premium!</h3>
+	<p>Upgrade your account now and become a <strong>Premium Ninja</strong> for only <span>$3 per month</span>! Why?</p>
+	<div id="premiumFeatures" class="clearfix">
+		<img src="http://compareninja.com/public/images/premium_logo.png" />
+		<div>
+			<ul class="checked">
+				<li>Premium skins</li>
+				<li>Unlimited tables</li>
+				<li>Unlimited rows and columns</li>
+				<li>CSV table generator</li>
+				<li>No advertisements</li>
+				<li>Private tables</li>
+			</ul>
+			<a href="http://compareninja.com/premium" target="_blank" class="button"><span>Upgrade Now</span></a>
+		</div>
+	</div>
+</div>	
+
+<div id="confirmationBox" class="lightbox special">
+	<h3></h3>
+	<p></p>
+	<div class="center">
+		<a href="#" class="closeBtn"></a>
+		<a href="#" class="confirmBtn button"><span></span></a>
+	</div>
+</div>
+
+<div id="contactusBox" class="lightbox special">
+	<section class="form">
+		<h3>Contact Us</h3>
+		<div class="formRow clearfix">
+			<label>Name</label>
+			<input type="text" name="name" autofocus />
+		</div>
+		<div class="formRow clearfix">
+			<label>Email</label>
+			<input type="text" name="email" />
+		</div>
+		<div class="formRow clearfix">
+			<label>Subject</label>
+			<input type="text" name="subject" />
+		</div>
+		<div class="formRow clearfix">
+			<label>Message</label>
+			<textarea name="message"></textarea>
+		</div>
+		<footer class="clearfix">
+			<a href="http://compareninja.com/contact/send" class="sendContactus button"><span>Send</span></a>
+			<p>You may also contact us through our <br />regular <a href="mailto:contact@compareninja.com">email address</a>.</p>
+		</footer>
+	</section>
+</div>
+
+<img style="display: none;" src="http://compareninja.com/public/images/loader_big.gif" />
+<img style="display: none;" src="http://compareninja.com/public/images/loader_small.gif" />
+
+<script type="text/javascript">
+	var baseURL = "http://compareninja.com/";
+	var userGUID = "635ed87599da48b995b84efecb8e11b5";
+</script>
+
+</body>
+</html>

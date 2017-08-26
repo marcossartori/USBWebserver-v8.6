@@ -1,0 +1,69 @@
+Configuração para envio de emails:
+
+No PHP.ini
+
+SMTP = localhost
+smtp_port = 25
+
+; For Win32 only.
+sendmail_path = "C:\wamp\www\sistema\validacao\sendmail\sendmail.exe -t -i"
+; http://php.net/sendmail-from
+sendmail_from = esaul.pires@agricultura.gov.br
+
+
+; For Unix only.  You may supply arguments as well (default: "sendmail -t -i").
+; http://php.net/sendmail-path
+sendmail_path ="C:\wamp\www\sistema\validacao\sendmail\sendmail.exe -t"
+
+
+=================================================================================
+
+No stunnel.conf
+
+socket = l:TCP_NODELAY=1
+socket = r:TCP_NODELAY=1
+debug = 7
+output = stunnel.log
+
+cert = stunnel.pem
+
+
+[ssmtp]
+accept = 127.0.0.1:25
+connect = smtps.agricultura.gov.br:465
+
+
+[gmail-smtp]
+client = yes
+accept = 127.0.0.1:25
+connect = smtps.agricultura.gov.br:465
+
+
+=====================================================================================
+
+No sendmail.ini
+
+
+smtp_server=smtp.agricultura.gov.br
+smtp_port=25
+smtp_ssl=auto
+;default_domain=agricultura.gov.br
+error_logfile=error.log
+
+auth_username=lanagrors.inf@gmail.com
+auth_password=lanagrors2012
+
+force_sender=lanagrors.inf@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=(select `lanagro_rs`.`arquivos`.`obs` AS `obs`,`lanagro_rs`.`arquivos`.`ativo` AS `ativo`,`lanagro_rs`.`arquivos`.`codarq` AS `codarq`,`lanagro_rs`.`anos`.`ano` AS `ano`,`lanagro_rs`.`meses`.`mes` AS `mes`,`lanagro_rs`.`arquivos`.`status` AS `status`,`lanagro_rs`.`arquivos`.`name` AS `name`,`lanagro_rs`.`tipodoc`.`nome` AS `nome`,`lanagro_rs`.`tab_empresa`.`empresa` AS `empresa`,`lanagro_rs`.`contratos`.`n_contrato` AS `n_contrato`,`lanagro_rs`.`anos`.`codano` AS `codano` from (((((`lanagro_rs`.`arquivos` join `lanagro_rs`.`tab_empresa`) join `lanagro_rs`.`tipodoc`) join `lanagro_rs`.`meses`) join `lanagro_rs`.`anos`) join `lanagro_rs`.`contratos`) where ((`lanagro_rs`.`tab_empresa`.`id` = `lanagro_rs`.`arquivos`.`codempresa`) and (`lanagro_rs`.`arquivos`.`tipo_arq` = `lanagro_rs`.`tipodoc`.`iddoc`) and (`lanagro_rs`.`arquivos`.`ano` = `lanagro_rs`.`anos`.`codano`) and (`lanagro_rs`.`arquivos`.`mes` = `lanagro_rs`.`meses`.`codmes`) and (`lanagro_rs`.`arquivos`.`contrato` = `lanagro_rs`.`contratos`.`id`)) order by `lanagro_rs`.`anos`.`ano`)
+md5=ed283241b13c631944978dde419f5564
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2017-08-26 06:35:03
+create-version=1
+source=(select `arquivos`.`obs` AS `obs`,`arquivos`.`ativo` AS `ativo`,`arquivos`.`codarq` AS `codarq`,`anos`.`ano` AS `ano`,`meses`.`mes` AS `mes`,`arquivos`.`status` AS `status`,`arquivos`.`name` AS `name`,`tipodoc`.`nome` AS `nome`,`tab_empresa`.`empresa` AS `empresa`,`contratos`.`n_contrato` AS `n_contrato`,`anos`.`codano` AS `codano` from (((((`arquivos` join `tab_empresa`) join `tipodoc`) join `meses`) join `anos`) join `contratos`) where ((`tab_empresa`.`id` = `arquivos`.`codempresa`) and (`arquivos`.`tipo_arq` = `tipodoc`.`iddoc`) and (`arquivos`.`ano` = `anos`.`codano`) and (`arquivos`.`mes` = `meses`.`codmes`) and (`arquivos`.`contrato` = `contratos`.`id`)) order by `anos`.`ano`)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `lanagro_rs`.`arquivos`.`obs` AS `obs`,`lanagro_rs`.`arquivos`.`ativo` AS `ativo`,`lanagro_rs`.`arquivos`.`codarq` AS `codarq`,`lanagro_rs`.`anos`.`ano` AS `ano`,`lanagro_rs`.`meses`.`mes` AS `mes`,`lanagro_rs`.`arquivos`.`status` AS `status`,`lanagro_rs`.`arquivos`.`name` AS `name`,`lanagro_rs`.`tipodoc`.`nome` AS `nome`,`lanagro_rs`.`tab_empresa`.`empresa` AS `empresa`,`lanagro_rs`.`contratos`.`n_contrato` AS `n_contrato`,`lanagro_rs`.`anos`.`codano` AS `codano` from (((((`lanagro_rs`.`arquivos` join `lanagro_rs`.`tab_empresa`) join `lanagro_rs`.`tipodoc`) join `lanagro_rs`.`meses`) join `lanagro_rs`.`anos`) join `lanagro_rs`.`contratos`) where ((`lanagro_rs`.`tab_empresa`.`id` = `lanagro_rs`.`arquivos`.`codempresa`) and (`lanagro_rs`.`arquivos`.`tipo_arq` = `lanagro_rs`.`tipodoc`.`iddoc`) and (`lanagro_rs`.`arquivos`.`ano` = `lanagro_rs`.`anos`.`codano`) and (`lanagro_rs`.`arquivos`.`mes` = `lanagro_rs`.`meses`.`codmes`) and (`lanagro_rs`.`arquivos`.`contrato` = `lanagro_rs`.`contratos`.`id`)) order by `lanagro_rs`.`anos`.`ano`)

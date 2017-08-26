@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Menu Maker Installation Instructions</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="menu_source/menu_jquery.js"></script>
+<style type="text/css">
+  body{padding:20px; font-size:14px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
+  h2 {font-weight:bold; color:#000099; margin: 20px 0px 10px 0; font-size: 1.5em;}
+  p span {color:#006600; font-weight:bold; }
+  a, a:link, a:visited {color:#0000FF;}
+  textarea {width: 100%; padding: 10px; margin: 10px 0 15px 0; font-size: 13px; font-family: Consolas,monospace;}
+  textarea.html {height: 300px;}
+  textarea.css {height: 50px;}
+  p {margin: 0 0 10px 0; line-height: 1.5; font-size: 1em;}
+  code, pre {font-family: Consolas,monospace; color: green;}
+  ol li {margin: 0 0 15px 0;}
+
+  .thirds {width: 30%; margin: 0 5% 0 0; float: left;}
+  .thirds.last {margin-right: 0; float: left;}   
+  .thirds textarea {height: 50px; font-size: .9em;}
+</style>
+
+
+</head>
+
+<body>
+
+
+<style type="text/css">/* Starter CSS for Flyout Menu */
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#cssmenu ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+  float: left;
+}
+#cssmenu ul li {
+  float: left;
+  min-height: 1px;
+  line-height: 1em;
+  vertical-align: middle;
+}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+#cssmenu ul ul li {
+  float: none;
+}
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+#cssmenu ul ul {
+  top: 0;
+  left: 100%;
+}
+#cssmenu ul li {
+  float: none;
+}
+/* Custom Stuff */
+#cssmenu {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+  width: 200px;
+}
+#cssmenu span,
+#cssmenu a {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu > ul > li:first-child {
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#cssmenu > ul > li:last-child {
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#cssmenu > ul > li ul ul {
+  -moz-border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#cssmenu > ul > li ul ul li:first-child {
+  -moz-border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+  border-radius: 0 5px 0 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#cssmenu > ul > li ul ul li:last-child {
+  -moz-border-radius: 0 0 5px 0;
+  -webkit-border-radius: 0 0 5px 0;
+  border-radius: 0 0 5px 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#cssmenu ul,
+#cssmenu li {
+  width: 100%;
+}
+#cssmenu li {
+  background: #dddddd url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAMAAAA8eE0hAAAAUVBMVEX////MzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzNzc3l5eXg4ODZ2dnMzMzi4uLS0tLe3t7Q0NDV1dXj4+PW1tbk5OTc3NzPz8/R0dH0Zv5RAAAAC3RSTlMAM2YekAmlPHuEAwArv7wAAAA/SURBVHheY2Dl5mdigABGKV5BNnYok4dHQpKFGcrkEefj5gAzQUBABM7kFYQyRcX4mUBMkEpOLrA2IWGwfgYAn0UDZszv8IwAAAAASUVORK5CYII=) repeat-x;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e5e5e5), color-stop(1, #dddddd));
+  background-image: -webkit-linear-gradient(top, #e5e5e5, #dddddd);
+  background-image: -moz-linear-gradient(top, #e5e5e5, #dddddd);
+  background-image: -ms-linear-gradient(top, #e5e5e5, #dddddd);
+  background-image: -o-linear-gradient(top, #e5e5e5, #dddddd);
+  background-image: linear-gradient(#e5e5e5, #dddddd);
+}
+#cssmenu li:hover {
+  background: #f6f6f6;
+}
+#cssmenu a {
+  color: #666666;
+  line-height: 160%;
+  padding: 11px 28px 11px 28px;
+  width: 144px;
+}
+#cssmenu ul ul {
+  width: 200px;
+  border: 1px solid #dddddd;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+#cssmenu ul ul li {
+  background: #f6f6f6;
+}
+#cssmenu ul ul li:hover {
+  background: #dddddd;
+}
+#cssmenu ul ul li:hover a {
+  color: #AE0001;
+}
+#cssmenu ul ul li ul li {
+  background: #dddddd;
+}
+#cssmenu ul ul li ul li:hover {
+  background: #b7b7b7;
+}
+#cssmenu .has-sub {
+  position: relative;
+}
+#cssmenu .has-sub:after,
+#cssmenu .has-sub > ul > .has-sub:hover:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 9px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  margin-top: -5px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAMAAAA8eE0hAAAAUVBMVEX////MzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzNzc3l5eXg4ODZ2dnMzMzi4uLS0tLe3t7Q0NDV1dXj4+PW1tbk5OTc3NzPz8/R0dH0Zv5RAAAAC3RSTlMAM2YekAmlPHuEAwArv7wAAAA/SURBVHheY2Dl5mdigABGKV5BNnYok4dHQpKFGcrkEefj5gAzQUBABM7kFYQyRcX4mUBMkEpOLrA2IWGwfgYAn0UDZszv8IwAAAAASUVORK5CYII=);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+#cssmenu .has-sub > ul > .has-sub:after,
+#cssmenu .has-sub:hover:after {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAMAAAA8eE0hAAAAUVBMVEX////d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3e3t729vbx8fHq6urd3d3z8/Pj4+Pv7+/h4eHm5ub09PTn5+f19fXt7e3g4ODi4uLUsVdlAAAAC3RSTlMAM2YekAmlPHuEAwArv7wAAAA/SURBVHheY2Dl5mdigABGKV5BNnYok4dHQpKFGcrkEefj5gAzQUBABM7kFYQyRcX4mUBMkEpOLrA2IWGwfgYAn0UDZszv8IwAAAAASUVORK5CYII=);
+}
+</style>
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='#'><span>Products</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Product 1</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Item</span></a></li>
+               <li class='last'><a href='#'><span>Sub Item</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Product 2</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Item</span></a></li>
+               <li class='last'><a href='#'><span>Sub Item</span></a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><a href='#'><span>About</span></a></li>
+   <li class='last'><a href='#'><span>Contact</span></a></li>
+</ul>
+</div>
+
+<div style="clear:both; margin: 0 0 30px 0;">&nbsp;</div>
+
+<h2>Installation Instructions</h2>
+<p>These instructions will only work if you are installing your menu on a remote server or have a localhost server setup on your computer. For more help installing your menu, please visit the <a href="http://cssmenumaker.com/resources">Resources</a> section of our site. </p>
+<ol>
+   <li>Upload the <code>menu_source</code> folder to the root directory of your website. This is usually where your <code>index.html</code> or <code>index.php</code> file is.</li>
+   <li>Copy and paste the code below somewhere between the <code>&lt;head>&lt;/head></code> tags.
+	 	<textarea class='css'><link href="/menu_assets/styles.css" rel="stylesheet" type="text/css"></textarea>
+	  
+	 </li>
+   <li>Copy and paste the HTML below where ever you want your menu to show up.<textarea class='html'><div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='#'><span>Products</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Product 1</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Item</span></a></li>
+               <li class='last'><a href='#'><span>Sub Item</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Product 2</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Item</span></a></li>
+               <li class='last'><a href='#'><span>Sub Item</span></a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><a href='#'><span>About</span></a></li>
+   <li class='last'><a href='#'><span>Contact</span></a></li>
+</ul>
+</div></textarea></li>
+</ol>
+
+
+<div class="thirds">
+<h2>Share the Love</h2>
+<p>If you are using our menus for free, then please consider giving us a link from your site. We have spent alot of time on these menus and would greatly appreciate a little credit.</p>
+<textarea readonly="readonly"><a href="http://cssmenumaker.com" title="Drop Down Menus">Drop Down Menu by CSSMenuMaker.com</a></textarea>
+</div>
+
+<div class="thirds">
+<h2>Menu Showcase</h2>
+<p>Every month we publish a blog post and a newsletter showcasing some of the sites that use our menus. 
+Our blog and newsletters are seen by thousands of people a day, so if your site is included in our showcase 
+you can expect some serious traffic.</p>
+<p>To submit your site visit the <a href="http://cssmenumaker.com/showcase">Menu Showcase</a> form.</p>
+</div>
+
+<div class="thirds last">
+<h2>Troubleshooting</h2>
+<p>Visit our <a href="http://cssmenumaker.com/resources">Resources</a> section more installation guides and troubleshooting materials.</p>
+</div>
+
+</body>
+</html>

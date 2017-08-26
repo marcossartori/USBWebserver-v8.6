@@ -1,0 +1,22 @@
+	<style> 
+.txtbold { 
+font-family : Arial, Helvetica, Geneva, sans-serif; 
+font-size : 12px; 
+font-weight : bold; 
+color : #000000; 
+} 
+.txtnormal { 
+font-family : Arial, Helvetica, Geneva, sans-serif; 
+font-size : 12px; 
+font-weight : normal; 
+color : #000000; 
+} 
+input{ 
+background-color: #ffffff; 
+font-family: Arial, Helvetica, Geneva, sans-serif; 
+font-weight: normal; 
+font-size: 12px; 
+width:150px; 
+} 
+
+</style>

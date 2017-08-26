@@ -1,0 +1,33 @@
+ul.vert-one{
+margin:0px;
+padding:0px;
+list-style-type:none;
+display: inline;
+font:bold 16px Helvetica, Verdana, Arial, sans-serif;
+line-height:165%;
+width:200px;
+}
+
+/*corpo principal e bordas*/
+ul.vert-one li
+{
+margin:0;
+padding:0;
+border-top:0px solid #0CF;
+border-bottom:0px solid #761A1A;
+}
+
+ul.vert-one li a{
+display:block;
+text-decoration:none;
+color:#FFF;
+background:#0CF;
+padding:0 0 0 20 px;
+width:180px;
+}
+/*trocar cor do menu*/
+ul.vert-one li a:hover{
+background:#69F url("images/vert-one_arrow.gif") no-repeat 0 9px;}
+/*menu sem efeito hover*/
+ul.vert-one li a.current,ul.vert-one li a.current:hover{
+background:#066 url("images/vert-one_arrow.gif") no-repeat 0 9px;}*/

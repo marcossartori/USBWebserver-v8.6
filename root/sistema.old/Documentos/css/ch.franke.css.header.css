@@ -1,0 +1,36 @@
+.header {
+	background: none repeat scroll 0 0 #888888;
+	border-top: 1px solid white;
+	height: 75px;
+	margin-top: -1px;
+	position: absolute;
+	width: 100%;
+}
+.header table {
+	width: 100%;
+	border-collapse:collapse;
+}
+.header td {
+	vertical-align: middle;
+	border: 0;
+	background: none repeat scroll 0 0 #888888;
+}
+a img.flag {
+	margin-right: 10px;
+}
+.loginInfo {
+	color: #ffffff;
+	font-weight: bold;
+	font-size:10px;
+}
+
+.header .logo {
+	margin: 10px 0 !important;
+}
+.header .title {
+	color: #FFFFFF;
+	position: relative;
+	top: 10px;
+	font-weight:bold;
+	font-size:20px;
+}

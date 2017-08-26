@@ -1,0 +1,171 @@
+body {
+	color: #282828;
+	font-family: Arial,Helvetica,clean,sans-serif;
+	font-size: 12px;
+	background-color:#eeeeee;
+}
+a, a:link, a:visited {
+	color: #8B0000;
+	color: #282828;
+    text-decoration: none;
+}
+a.bg, a.xspLinkFileDownload {
+	/*background: url(http://www.franke.com/2010/img/franke-icons-coffee_systems.png) no-repeat scroll 0 4px transparent;*/
+	background: url(pfeil.png) no-repeat scroll 0 2px transparent;
+	padding-left: 11px;
+}
+a:hover {
+	color: #8E785E;
+}
+a img.action {
+	margin: 0 5px;
+}
+
+hr {
+	background-color:#dddddd;
+	color:#dddddd;
+}
+
+td {
+	vertical-align: top;
+}
+div.main {
+	margin-top:57px;
+}
+div.left {
+	float:left;
+	width:180px;
+	padding: 0 10px;
+}
+div.prodInfo {
+	width: 100%;
+	text-align:center;
+	padding:15px 0 0 0;
+	margin-bottom:28px;
+}
+.navTitle {
+	font-weight: bold;
+}
+ul {
+	list-style-type: none;
+	padding-left: 15px;
+	margin: 5px 0 30px 0;
+}
+li {
+	padding: 1px 0;
+}
+div.navActive {
+	background-color: #777777;
+	padding: 1px 0 1px 3px;
+}
+div.navActive a {
+	color: #ffffff;
+}
+
+
+div.content {
+	background-color:#ffffff;
+	margin-left:200px;
+	padding:0 5px;
+	min-height:600px;
+}
+
+.xspTabbedPanelOuter {
+	padding-top: 7px;
+}
+.xspTabbedPanelContainer li {
+	font-size: 13px;
+}
+
+table.tabTable, table.inner {
+	width:99%;
+	border-collapse:collapse;
+	margin:7px 5px;
+}
+table.tabTable th, table.inner th {
+	font-weight: bold;
+	border-bottom:1px solid #888888;
+}
+.inner td {
+	padding: 2px 0;
+}
+.inner td.label {
+	font-weight:bold;
+	width:170px;
+}
+input[type=text].long {
+	width:250px;
+}
+input[type=text].short {
+	width:30px;
+}
+textarea.long {
+	width:90%;
+}
+.icon {
+	vertical-align: middle;
+	text-align:center;
+	width: 30px;
+}
+tr.hover:hover {
+	background-color:#eeeeee;
+}
+
+/*hover popup*/
+#details-popup {
+	background:transparent url(fp-box_r400.png) no-repeat scroll 0 0;
+	height: 80px; width: 378px;
+	font: 10px Helvetica;
+	padding: 20px 10px 10px 11px;
+	position: relative;
+}
+.popup {
+	padding: 5px;
+}
+td.showPopup span {
+	border-bottom: 1px dotted #666666;	
+}
+
+
+/*checkbox group*/
+ul.accessRights {
+	margin:0;
+	padding:0;
+}
+.xspButtonCommand, .lotusBtn {
+	background-image:url("/oneuiv2/defaultTheme/themeImages/lotusHorzBgSprite-8bit.png");
+	color: #000000;
+	font-size: 13px;
+}
+.xspButtonCommand[disabled], .lotusBtn[disabled] {
+	color: #888888;
+}
+
+ul.product {
+	margin:5px 0 15px 0;
+}
+ul.inner {
+	margin: 0;
+}
+ul.inner li {
+	padding-left:10px;
+}
+span.action {
+	display:inline-block;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-top:1px solid #dddddd;
+	border-left:1px solid #dddddd;
+	border-right:1px solid #dddddd;
+}
+a.colSorted {
+	color: #8E785E;
+}
+fieldset.cbox {
+	border:0;
+}
+/*
+.dijitDialog .dijitDialogTitleBar .dijitDialogCloseIcon {
+    display:none;
+}
+*/

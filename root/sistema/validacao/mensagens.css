@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { font-family: Verdana; font-size: 100%; }
+
+label { display: block; margin-top: 10px; }
+
+label.error { float: none; color: red; margin: 0 .5em 0 0; vertical-align: top; font-size: 11px }
+
+p { clear: both; }
+
+.submit { 
+margin-top
+: 1em; }
+
+em { font-weight: bold; padding-right: 1em; vertical-align: top; }

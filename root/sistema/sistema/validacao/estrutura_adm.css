@@ -1,0 +1,80 @@
+/* CSS Document */
+body {
+	background-color:#FFF;
+	margin:0px;
+	font-family:Calibri, Arial, sans-serif;
+	font-size:16px;
+	line-height:12px;
+	text-align: center;
+	}
+	
+	#topoadm {
+		background-image:url(imagens/fundo_adm_topo.jpg);
+		background-color:#FFC;
+		margin-top:20px;
+		height:25px;
+		width:500px;
+		text-align:right;
+		vertical-align:bottom;
+		padding-right:35;
+		padding-top:5;
+		
+	}
+	
+	#areapainel {
+		background-image:url(imagens/fundo_adm.jpg);
+		height:400px;
+		width:500px;
+		text-align:center;
+	} 	#areapainel a {
+		color:#000000;
+	}
+	
+	#rodapeadm {
+		background-color:#999;
+		height:25px;
+		width:500px;
+		text-align:center;
+		background-image:url(imagens/fundo_adm_rodape.jpg);
+	}
+	
+	#linha {
+		padding-top:7px;
+		width:400;
+		height:20;
+		vertical-align:middle;
+		}
+	
+	#id {
+		font-size:14;
+		width:10;
+		height:30;
+		float:left;
+		vertical-align:middle;
+	}
+	
+	#nome {
+		font-size:14;
+		width:250;
+		height:30;
+		float:left;
+		vertical-align:middle;
+	}
+	
+	#d1 {
+		font-size:14;
+		width:10;
+		height:30;
+		float:left;
+		vertical-align:middle;
+	}
+div.blue{
+	color:#00F;
+}
+div.red {
+	color:#F00;
+}
+
+
+		  
+  

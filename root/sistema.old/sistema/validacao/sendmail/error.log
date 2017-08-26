@@ -1,0 +1,51 @@
+13/06/10 16:00:07 : Socket Error # 10054<EOL>Connection reset by peer.
+13/06/10 16:02:37 : Socket Error # 10054<EOL>Connection reset by peer.
+13/06/10 16:04:09 : Socket Error # 10054<EOL>Connection reset by peer.
+13/06/10 16:15:32 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:16:40 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:16:59 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:22:34 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:23:02 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:23:12 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:28:50 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:29:00 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:30:40 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:31:20 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:31:24 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:31:28 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:32:00 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:32:09 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:32:24 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/10 16:36:46 : Error: authentication failed: UGFzc3dvcmQ6<EOL>
+13/06/13 12:06:19 : MAIL FROM syntax error<EOL>
+13/06/13 12:06:43 : MAIL FROM syntax error<EOL>
+13/06/13 12:06:45 : MAIL FROM syntax error<EOL>
+13/06/13 12:07:24 : RCPT TO syntax error<EOL>
+13/06/13 14:10:53 : Connect timed out.
+13/06/13 14:10:53 : Connect timed out.
+13/06/13 14:10:54 : Connect timed out.
+13/06/13 14:10:58 : Connect timed out.
+13/06/13 14:10:58 : Connect timed out.
+13/06/13 14:10:58 : Connect timed out.
+13/06/13 14:10:59 : Connect timed out.
+13/06/13 14:11:03 : Connect timed out.
+13/06/13 14:11:04 : Connect timed out.
+13/06/13 14:11:05 : Connect timed out.
+13/06/13 14:11:05 : Connect timed out.
+13/06/13 14:11:07 : Connect timed out.
+13/06/13 14:11:08 : Connect timed out.
+13/06/13 14:11:09 : Connect timed out.
+13/06/13 14:11:10 : Connect timed out.
+13/06/13 14:11:13 : Connect timed out.
+13/06/13 14:11:15 : Connect timed out.
+13/06/13 14:11:16 : Connect timed out.
+13/06/13 14:11:20 : Connect timed out.
+13/06/13 14:11:21 : Connect timed out.
+13/06/13 14:11:26 : Connect timed out.
+13/06/13 14:15:30 : Connect timed out.
+13/06/13 14:15:30 : Connect timed out.
+13/06/13 14:15:30 : Connect timed out.
+13/06/13 14:15:30 : Connect timed out.
+13/06/13 14:15:30 : Connect timed out.
+13/06/13 14:15:31 : Connect timed out.
+13/06/14 08:27:26 : MAIL FROM syntax error<EOL>

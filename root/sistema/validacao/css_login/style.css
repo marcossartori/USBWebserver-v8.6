@@ -1,0 +1,47 @@
+@charset "utf-8";
+.box {
+	height: 190px;
+	width: 350px;
+	border: 1px solid #CCC;
+	border-radius: 8px 8px 8px 8px;
+	box-shadow: 5px 5px 5px #333;
+	background-color: #F8F8F8;
+	margin-top: -95px;
+	margin-left: -175px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+.box .txt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	float: left;
+	height: 16px;
+	width: 90%;
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+}
+.box .txtbox {
+	float: left;
+	width: 285px;
+	height: 18px;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 8px 8px 8px 8px;
+	outline: none;
+}
+.box .button {
+	float: left;
+	margin-top: 24px;
+	margin-left: 125px;
+	width: 100px;
+	cursor: pointer;
+}

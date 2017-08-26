@@ -1,0 +1,77 @@
+<!--
+nav {
+    clear:both;
+    color:#FFF;
+    background:#000;
+	height:50px;
+	width:500px;
+    height:25px;
+    padding:10px;
+    font-weight: nornal;
+    font-size: 1em;
+    margin:50px ;
+	
+}
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    float: left;
+}
+nav ul li {
+    display:  block;
+    float: left;
+    margin-right: 20px;
+    position: relative ;
+	border: solid 1px #39C;
+	
+	
+}
+nav ul li a {
+    color: #FFF;
+    background: #000;
+    text-decoration: none;
+    padding:0 0 0 20px
+    display: inline-block;
+    margin:0px;
+    float: left;
+}
+nav ul li a:hover {
+    background: #DEDEDE;
+    color: #666;
+	
+}
+nav .current-menu-item a {
+    background: #FFF;
+    color: #666;
+}
+/* responssavel por estilazar os dados aparesentados pelo banco*/
+nav ul li ul { 
+    display: block;
+    float: left;
+    left: -11px;
+    position: absolute;
+    top: 100%;
+    border: solid 1px #39C;
+}
+nav ul li:hover > ul {
+    display:block;
+}
+nav ul li ul li,
+nav ul li ul li a {
+    float: none;
+    background: #444;
+    color: #CCC;
+}
+nav ul li ul li a:hover {
+    float: none;
+    background: #FFF;
+    color: #666;
+}
+nav ul li ul li {
+    margin: 0;
+}
+nav ul li ul li ul {
+    left: 100%;
+    top: 0;
+-->
